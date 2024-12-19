@@ -1,0 +1,69 @@
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block title %}{% endblock title %}
+
+{% block content %}
+
+<main class="main">
+        <section class="popular-items">
+            <div class="container">
+                <div class="popular-items__inner">
+                    <div class="popular-items__title">
+                        Popular items
+                    </div>
+                    <div class="popular-items__filter">
+                        <ul class="list-reset popular-items__list">
+                            <li class="popular-items__item">
+                                <a href="#" class="popular-items__link">
+                                    Cuisine
+                                </a>
+                            </li>
+                            <li class="popular-items__item">
+                                <a href="#" class="popular-items__link">
+                                    Type
+                                </a>
+                            </li>
+                            <li class="popular-items__item">
+                                <a href="#" class="popular-items__link">
+                                    Ingredients
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cards popular-items__cards">
+
+                        {% for card in cards %}
+
+                            <div class="card">
+                                {% if card.image %}
+                                    <img src="{{ card.image.url }}" alt="Cheese Burger" class="card__image">
+                                {% endif %}
+                                <h1 class="card__title">
+                                    {{ card.name }}
+                                </h1>
+                                <p class="card__address">
+                                    {{ card.address }}
+                                </p>
+                                <p class="card__price">
+                                    ${{ card.price }}
+                                </p>
+                                <div class="card__button">
+                                    <p class="card__button-text">Order Now</p>
+                                </div>
+                            </div>
+
+                        {% endfor %}
+                        
+                        
+                    
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+{% endblock content %}

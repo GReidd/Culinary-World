@@ -1,0 +1,72 @@
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block title %}
+
+{% endblock title %}
+
+{% block content %}
+
+<main class="main">
+        <section class="contact">
+            <div class="container">
+                <div class="contact__inner">
+                    <div class="contact__title">
+                        Contact Us
+                    </div>
+                    <form class="contact__form">
+                        <div class="contact__content">
+                            <input type="text" placeholder="Name" class="contact__input">
+                            <textarea placeholder="Write here" class="contact__textarea"></textarea>
+                        </div>
+                        <div class="button">
+                            <p class="button__text">
+                                Send
+                            </p>
+                        </div>
+                    </form>
+                    <div class="contact__subtitle">
+                        Contacts
+                    </div>
+                    <ul class="list-reset contact__list">
+                        <li class="contact__item">
+                            <img src="{% static 'main/images/contact/twitter.svg' %}" alt="twitter" class="contact__img">
+                            <a href="#" class="contact__link">
+                                Twitter
+                            </a>
+                        </li>
+                        <li class="contact__item">
+                            <img src="{% static 'main/images/contact/instagram.svg' %}" alt="instagram" class="contact__img">
+                            <a href="#" class="contact__link">
+                                Instagram
+                            </a>
+                        </li>
+                        <li class="contact__item">
+                            <img src="{% static 'main/images/contact/facebook.svg' %}" alt="facebook" class="contact__img">
+                            <a href="#" class="contact__link">
+                                Facebook
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="contact__subtitle">
+                        FAQ
+                    </div>
+                    <p class="contact__text">
+                        I’am Anthony and Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                        type and scrambled it to
+                        make a type specimen book. It has survived not only five centuries, but also the leap into
+                        electronic typesetting,
+                        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+                        sheets containing Lorem
+                        Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+                        including versions of Lorem
+                        Ipsum.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+{% endblock content %}

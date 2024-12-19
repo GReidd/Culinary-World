@@ -1,0 +1,200 @@
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block title %}{% endblock title %}
+
+{% block content %}
+
+<main class="main">
+        <section class="recipe">
+            <div class="container">
+                <div class="recipe__inner">
+                    <div class="recipe__about">
+                        <h1 class="recipe__title">
+                            Crispy Sandwich
+                        </h1>
+                        <div class="recipe__category">
+                            <ul class="list-reset recipe__list">
+                                <li class="recipe__item">
+                                    <a href="#" class="recipe__link">
+                                        Sandwich
+                                    </a>
+                                </li>
+                                <li class="recipe__item">
+                                    <a href="#" class="recipe__link">
+                                        Kitchen
+                                    </a>
+                                </li>
+                                <li class="recipe__item">
+                                    <a href="#" class="recipe__link">
+                                        5:00 min
+                                    </a>
+                                </li>
+                                <li class="recipe__item">
+                                    <a href="#" class="recipe__link">
+                                        Portion <span>1</span>
+                                    </a>
+                                </li>
+                                <li class="recipe__item">
+                                    <a href="#" class="recipe__link">
+                                        Ingredients <span>6</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="recipe__description">
+                            <h2 class="recipe__subtitle">
+                                How to Cook
+                            </h2>
+                            <p class="recipe__text">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has
+                                been the industry's standard
+                                dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                                scrambled
+                                it to make a type specimen
+                                book. It has survived not only five centuries, but also the leap into electronic
+                                typesetting, remaining essentially
+                                unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                                containing
+                                Lorem Ipsum passages, and more
+                                recently with desktop publishing software like Aldus PageMaker including versions of
+                                Lorem
+                                Ipsum.
+                            </p>
+                        </div>
+                        <div class="recipe__photos">
+                            <img src="{% static 'main/images/recipe/photo.jpg' %}" alt="photo" class="recipe__photo">
+                            <img src="{% static 'main/images/recipe/photo.jpg' %}" alt="photo" class="recipe__photo">
+                            <img src="{% static 'main/images/recipe/photo.jpg' %}" alt="photo" class="recipe__photo">
+                        </div>
+                        <div class="recipe__comments">
+                            <div class="recipe__subtitle">
+                                Comments
+                            </div>
+                            <div class="recipe__form">
+                                <textarea placeholder="Write here" class="recipe__textarea"></textarea>
+                                <div class="button">
+                                    <p class="button__text">
+                                        Send
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="recipe__user-comments">
+                                <div class="recipe__user-comment">
+                                    <img src="{% static 'main/images/recipe/user-avatar.png' %}" alt="user-avatar" class="recipe__avatar">
+                                    <div class="recipe__comment-content">
+                                        <div class="recipe__username">
+                                            Anthony
+                                        </div>
+                                        <div class="recipe__text comment__text">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem
+                                            Ipsum has been the industry's standard
+                                            dummy text ever since the 1500s, when an unknown printer took a galley of
+                                            type
+                                            and scrambled it to make a type specimen
+                                            book. It has survived not only five centuries,
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="recipe__user-comment">
+                                    <img src="{% static 'main/images/recipe/user-avatar.png' %}" alt="user-avatar" class="recipe__avatar">
+                                    <div class="recipe__comment-content">
+                                        <div class="recipe__username">
+                                            Anthony
+                                        </div>
+                                        <div class="recipe__text">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem
+                                            Ipsum has been the industry's standard
+                                            dummy text ever since the 1500s, when an unknown printer took a galley of
+                                            type
+                                            and scrambled it to make a type specimen
+                                            book. It has survived not only five centuries,
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recipe__info">
+                        <img src="{% static 'main/images/recipe/recipe__img.jpg' %}" alt="recipe-image" class="recipe__image">
+                        <div class="recipe__content">
+                            <div class="recipe__ingredients">
+                                <div class="recipe__subtitle">
+                                    Ingredients
+                                </div>
+                                <ul class="list-reset recipe__list ingredients__list">
+                                    <li class="recipe__item">
+                                        Bread
+                                    </li>
+                                    <li class="recipe__item">
+                                        Meal
+                                    </li>
+                                    <li class="recipe__item">
+                                        Sunflower oil
+                                    </li>
+                                    <li class="recipe__item">
+                                        Vegetable oil
+                                    </li>
+                                    <li class="recipe__item">
+                                        Chease
+                                    </li>
+                                    <li class="recipe__item">
+                                        Cabbage
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="recipe__rating">
+                                <div class="recipe__stars">
+                                    <a href="#" class="recipe__star">
+                                        <svg width="25" height="24" viewBox="0 0 25 24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.5005 1.37892L16.3182 7.88792L16.4294 8.07756L16.6444 8.12379L24.0514 9.71662L19.0038 15.3264L18.8556 15.4911L18.8781 15.7116L19.6416 23.2003L12.7009 20.163L12.5005 20.0753L12.3001 20.163L5.35937 23.2002L6.12291 15.7116L6.14539 15.4911L5.99718 15.3264L0.949618 9.71662L8.35663 8.12379L8.57157 8.07756L8.6828 7.88792L12.5005 1.37892Z"
+                                                stroke="black" />
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="recipe__star">
+                                        <svg width="25" height="24" viewBox="0 0 25 24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.5005 1.37892L16.3182 7.88792L16.4294 8.07756L16.6444 8.12379L24.0514 9.71662L19.0038 15.3264L18.8556 15.4911L18.8781 15.7116L19.6416 23.2003L12.7009 20.163L12.5005 20.0753L12.3001 20.163L5.35937 23.2002L6.12291 15.7116L6.14539 15.4911L5.99718 15.3264L0.949618 9.71662L8.35663 8.12379L8.57157 8.07756L8.6828 7.88792L12.5005 1.37892Z"
+                                                stroke="black" />
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="recipe__star">
+                                        <svg width="25" height="24" viewBox="0 0 25 24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.5005 1.37892L16.3182 7.88792L16.4294 8.07756L16.6444 8.12379L24.0514 9.71662L19.0038 15.3264L18.8556 15.4911L18.8781 15.7116L19.6416 23.2003L12.7009 20.163L12.5005 20.0753L12.3001 20.163L5.35937 23.2002L6.12291 15.7116L6.14539 15.4911L5.99718 15.3264L0.949618 9.71662L8.35663 8.12379L8.57157 8.07756L8.6828 7.88792L12.5005 1.37892Z"
+                                                stroke="black" />
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="recipe__star">
+                                        <svg width="25" height="24" viewBox="0 0 25 24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.5005 1.37892L16.3182 7.88792L16.4294 8.07756L16.6444 8.12379L24.0514 9.71662L19.0038 15.3264L18.8556 15.4911L18.8781 15.7116L19.6416 23.2003L12.7009 20.163L12.5005 20.0753L12.3001 20.163L5.35937 23.2002L6.12291 15.7116L6.14539 15.4911L5.99718 15.3264L0.949618 9.71662L8.35663 8.12379L8.57157 8.07756L8.6828 7.88792L12.5005 1.37892Z"
+                                                stroke="black" />
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="recipe__star">
+                                        <svg width="25" height="24" viewBox="0 0 25 24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.5005 1.37892L16.3182 7.88792L16.4294 8.07756L16.6444 8.12379L24.0514 9.71662L19.0038 15.3264L18.8556 15.4911L18.8781 15.7116L19.6416 23.2003L12.7009 20.163L12.5005 20.0753L12.3001 20.163L5.35937 23.2002L6.12291 15.7116L6.14539 15.4911L5.99718 15.3264L0.949618 9.71662L8.35663 8.12379L8.57157 8.07756L8.6828 7.88792L12.5005 1.37892Z"
+                                                stroke="black" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+{% endblock content %}
